@@ -12,7 +12,7 @@ def create_user():
     return new_user()
 
 @usersapi.route('users/', methods=['GET'])
-@token_required
+#@token_required
 def get_users():
     return get_all_users()
 

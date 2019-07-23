@@ -53,7 +53,14 @@ def get_single_user(id):
         return Status('404', 'User not found!').status_code()
 
 def get_all_users():
-    return ''
+    detail = UserDetails.query.first()
+    data = serialize_detail(detail)
+
+    if detail:
+        return Status('200', 'Ok', data).status_code()        
+    else:
+        return Status('404', 'Ok').status_code()
+    
 
 def get_user_details(id):
     detail = UserDetails.query.filter_by(detail_id=id).first()

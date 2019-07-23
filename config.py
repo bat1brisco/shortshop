@@ -8,14 +8,14 @@ ENV = 'dev'
 ENVIRONMENT = {
     'dev':{
         'DBHOST' : '127.0.0.1:3306',
-        'DBNAME' : 'v2_karga',
+        'DBNAME' : 'shortshop',
         'DBUSER' : 'root',
-        'DBPASS' : 'codechiq'
+        'DBPASS' : ''
     },
     'prod':{
         'DBHOST' : '127.0.0.1:3306',
-        'DBNAME' : '',
-        'DBUSER' : '',
+        'DBNAME' : 'shortshop',
+        'DBUSER' : 'root',
         'DBPASS' : ''
     }
 }

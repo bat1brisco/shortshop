@@ -2,7 +2,7 @@ from flask import Flask
 from config import HOST
 # from flask_sqlalchemy import get_debug_queries
 
-from flask_sqlalchemy import get_debug_queries
+from flask_sqlalchemy import get_debug_queries, SQLAlchemy
 
 # from version import *
 from routes.usersroute import usersapi
@@ -15,8 +15,6 @@ Blueprint is structuring the api's
 """
 
 app.register_blueprint(usersapi, url_prefix=api_version)
-
-
 
 
 
