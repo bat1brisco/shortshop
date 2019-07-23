@@ -10,13 +10,13 @@ ENVIRONMENT = {
         'DBHOST' : '127.0.0.1:3306',
         'DBNAME' : 'shortshop',
         'DBUSER' : 'root',
-        'DBPASS' : ''
+        'DBPASS' : 'd4rkl0z3r'
     },
     'prod':{
         'DBHOST' : '127.0.0.1:3306',
         'DBNAME' : 'shortshop',
         'DBUSER' : 'root',
-        'DBPASS' : ''
+        'DBPASS' : 'd4rkl0z3r'
     }
 }
 
@@ -31,7 +31,7 @@ SESSION_OPTS = {
     'session.cookie_expires'    : True,
     'session.timeout'           : 900,
     'session.auto'              : True,
-    'session.url'               : 'mysql+mysqldb://{0}:{1}@{2}/{3}?charset=utf8mb4'.format(DBUSER, DBPASS, DBHOST, DBNAME),
+    'session.url'               : 'mysql://{0}:{1}@{2}/{3}?charset=utf8mb4'.format(DBUSER, DBPASS, DBHOST, DBNAME),
     'session.lock_dir'          : os.path.join(SESSION_PATH, 'locks'),
     'session.data_dir'          : os.path.join(SESSION_PATH, 'data')
 }
